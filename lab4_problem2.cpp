@@ -1,6 +1,6 @@
 #include "lab4_problem2.h"
-#include <cstring>  // for strlen
-#include <cstdlib>  // for malloc
+#include <cstring>  
+#include <cstdlib>  
 
 char* echo(char* str) {
     if (str == nullptr) return nullptr;
@@ -8,7 +8,7 @@ char* echo(char* str) {
     int len = std::strlen(str);
     int totalLen = len * (len + 1) / 2;
 
-    char* result = (char*) std::malloc(totalLen + 1);  // +1 for '\0'
+    char* result = (char*) std::malloc(totalLen + 1); 
     if (result == nullptr) return nullptr;
 
     int pos = 0;
